@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>My-Nav-Brand!</title>
+  </head>
+  <body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Manic_Miner">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="About ManicMiner">
+          <img width="100" height="50" id="brand-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/ManicMinerLoadingScreen.gif/200px-ManicMinerLoadingScreen.gif" alt="ManicMiner">
+        </button>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#top">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Top<span class="sr-only">(current)</span></button>
+            </a>
+          </li>
+          
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Start Nonce" aria-label="Nonce">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+              </svg> Find a Block </button>
+          </form>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:history.go(0)">
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Reload</button>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">              
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Options</button>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Select Algoritm</a>
+              <a class="dropdown-item" href="#">Other options</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#ManicMining">About ManicMining</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <a class="nav-link active" href="#">
+       <button class="btn btn-outline-danger my-2 my-sm-0" id="clockbox">bla</button>
+       <script type="text/javascript">
+        var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];  
+        function GetClock(){
+        var d=new Date();
+        var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
+        var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+        document.getElementById('clockbox').innerHTML=clocktext;
+        document.getElementById('clockbox').innerHTML.toUpperCase();
+        }
+        GetClock();
+        setInterval(GetClock,1000);
+      </script>
+  
+      </a>
+
+    </nav>
+
+    <div class="row" id="top">
+      <div class="col-md-2" style="background-color: grey;">1st
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatibus. Reiciendis, praesentium laudantium atque architecto error, aliquid esse veniam a placeat quia sunt illo maiores? Totam rem est recusandae corporis.</p>
+      </div>
+      <div class="col-md-4" style="background-color: whitesmoke;">2nd
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatibus. Reiciendis, praesentium laudantium atque architecto error, aliquid esse veniam a placeat quia sunt illo maiores? Totam rem est recusandae corporis.</p>
+      </div>
+      <div class="col-md-6" style="background-color: white;">3rd
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatibus. Reiciendis, praesentium laudantium atque architecto error, aliquid esse veniam a placeat quia sunt illo maiores? Totam rem est recusandae corporis.</p>
+      </div>      
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" style="background-color: black;">
+        <h1>Welcome to Manic Miner world!</h1>
+        <p>Manic Miner is a platform video game originally written for the ZX Spectrum by Matthew Smith and released by Bug-Byte in 1983 (later re-released by Software Projects). It is the first game in the Miner Willy series and among the early titles in the platform game genre. The game itself was inspired by the Atari 8-bit family game Miner 2049er.[1] It has since been ported to numerous home computers, video game consoles and mobile phones.</p>
+      </div>
+      <div class="col-md-6" style="background-color: black;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/izJaZR3zm80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2" style="background-color: grey;">1st
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatibus. Reiciendis, praesentium laudantium atque architecto error, aliquid esse veniam a placeat quia sunt illo maiores? Totam rem est recusandae corporis.</p>
+      </div>
+      <div class="col-md-4" style="background-color: whitesmoke;">2nd
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatibus. Reiciendis, praesentium laudantium atque architecto error, aliquid esse veniam a placeat quia sunt illo maiores? Totam rem est recusandae corporis.</p>
+      </div>
+      <div class="col-md-6" style="background-color: white;">3rd
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatibus. Reiciendis, praesentium laudantium atque architecto error, aliquid esse veniam a placeat quia sunt illo maiores? Totam rem est recusandae corporis.</p>
+      </div>      
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" style="background-color: black;">
+        <h1 id="ManicMining">Welcome to Manic Miner world!</h1>
+        <p>Manic Miner is a platform video game originally written for the ZX Spectrum by Matthew Smith and released by Bug-Byte in 1983 (later re-released by Software Projects). It is the first game in the Miner Willy series and among the early titles in the platform game genre. The game itself was inspired by the Atari 8-bit family game Miner 2049er.[1] It has since been ported to numerous home computers, video game consoles and mobile phones.</p>
+      </div>
+      <div class="col-md-6" style="background-color: black;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0GjTJt40VRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
