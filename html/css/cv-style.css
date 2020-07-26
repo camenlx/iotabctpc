@@ -1,0 +1,71 @@
+/* filename: cv-style.css */
+/* Play */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+/* Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding: 1%;
+}
+
+img{
+    background-color: black;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    padding: 5px;
+    width: 150px;
+}
+
+div.mydata{
+    float: left;
+    width: 75%;
+}
+
+div.photo{
+        float: right;
+        width: 25%;
+}
+
+h1{
+    color: blue;
+    font-size: x-large;
+    font-family: Play;
+    text-align: center;
+}
+
+h2{
+    color: lime;
+    background-color: mediumblue;
+    font-family: sans-serif, Play;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h3{
+    font-family: Play;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h4{
+    font-family: Play;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+ul{
+    margin-left: 5%;
+    max-width: 85%;
+    font-family: Lobster;
+}
+
+li{
+    list-style-type: none;
+    background-color: orange;    
+}
+
+li::before {
+    content: "»"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: cyan; /* Or a color you prefer */
+}
