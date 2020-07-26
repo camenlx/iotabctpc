@@ -1,3 +1,7 @@
+
+# where are the tpcs
+go check the [tpcs](https://camenlx.github.io/iotabctpc/html/index.html) pages.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/camenlx/iotabctpc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
