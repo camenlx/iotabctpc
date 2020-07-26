@@ -9,4 +9,4 @@ community_bridge: # Replace with a single Community Bridge project-name e.g., cl
 liberapay: # Replace with a single Liberapay username
 issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
-custom: [ '[ivanontech.com](https://academy.ivanontech.com/a/30997/zNZpFDyz)', '[unstoppabledomains.com](https://unstoppabledomains.com/r/61acde140d38)', '[Graviex](https://graviex.net/signup?ref=1d36caa64565f0f79012b3dc)', '[Crex24](https://crex24.com/?refid=nqi2mzkdhbk6hg8jthre)' ]
+custom: [ 'https://academy.ivanontech.com/a/30997/zNZpFDyz', 'https://unstoppabledomains.com/r/61acde140d38', 'https://graviex.net/signup?ref=1d36caa64565f0f79012b3dc', 'https://crex24.com/?refid=nqi2mzkdhbk6hg8jthre' ]
